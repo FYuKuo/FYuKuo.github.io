@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .header {
@@ -7,9 +8,40 @@
     height: 600px;
     background: url(https://atctwn.com/wp-content/uploads/2020/02/%E6%B0%B8%E9%87%8E-2.jpg) no-repeat;
     background-position: center;
+    background-size: cover;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.card_img {
+    overflow: hidden;
+    height: 300px;
+    transition: all 2s;
+}
+
+.card_img:hover {
+    transform: scale(1.2,1.2);
+
+}
+
+.card_img>img {
+    height: 350px;
 }
